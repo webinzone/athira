@@ -1,36 +1,25 @@
 import React from 'react';
 import './App.css';
-import Button from './components/Button';
+
 import Header from './components/Header';
-import Label from './components/Label';
-import Page from './components/Page';
-import Navbar from './components/Navbar';
 
 
-function App() {
-  return (
+class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+      <header><br/>
+        <form id="my_app">
+                 <Header>SRS MANAGER</Header>
 
-
-       <div className="App">
-
-      <header className="App-header">
-    
-
-
-               <Page> Home Appointments </Page>
-
-          <Button>Hello, Storybook!</Button>
-         <Header>My App</Header>
-
-       <Label>hiiii</Label>
+          <input type="text" placeholder="Enter UserName" />
+          <input type="text" placeholder="Enter Password" /><br/>
+          <input type="button" value="LogIn" onClick={this.onSubmit} /><br/>
+        </form>
       </header>
-
- 
-    
-
-    </div>
-
-  );
+     </div>
+      );
+  }
 }
 
 export default App;

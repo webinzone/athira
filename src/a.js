@@ -1,14 +1,19 @@
-class Navbar extends React.Component{
-    render() {
-        return (
-            <div>
-              <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-        );
-    }
+import React from 'react';
+import './App.css';
+
+import Header from './components/Header';
+
+
+class App extends React.Component {
+  render(){
+    return (
+      <header><br/>
+                 <Header>SRS MANAGER</Header>
+
+
+      </header>
+      );
+  }
 }
+
+export default App;
